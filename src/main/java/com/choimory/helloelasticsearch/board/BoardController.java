@@ -2,8 +2,7 @@ package com.choimory.helloelasticsearch.board;
 
 import com.choimory.helloelasticsearch.board.dto.request.BoardRequestDto;
 import com.choimory.helloelasticsearch.board.service.BoardService;
-import com.choimory.helloelasticsearch.common.dto.response.CommonResponseDto;
-import org.springframework.data.domain.PageRequest;
+import com.choimory.helloelasticsearch.common.dto.CommonResponseDto;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

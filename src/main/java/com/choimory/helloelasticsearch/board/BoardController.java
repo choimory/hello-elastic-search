@@ -15,7 +15,7 @@ public class BoardController {
     private BoardService boardService;
 
     @GetMapping
-    public ResponseEntity<CommonResponseDto<?>> getBoards(final BoardRequestDto param, Pageable pageable){
+    public ResponseEntity<CommonResponseDto<?>> getBoards(final BoardRequestDto param, Pageable pageable) throws Exception{
         return ResponseEntity.ok(CommonResponseDto.builder()
                 .data(boardService.getBoards(param, pageable))
                 .build());
